@@ -6,13 +6,13 @@ import orderRouter from './routers/orderRouter.js';
 import productRouter from './routers/productRouter.js';
 import uploadRouter from './routers/uploadRouter.js';
 import userRouter from './routers/userRouter.js';
-
+import * as cors from 'cors';
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(cors())
 mongoose.connect(
   process.env.MONGODB_URL || 'mongodb+srv://prithivi:prithivi@cluster0.myqm7.mongodb.net/amazon-mongo-db?retryWrites=true&w=majority',
   {
