@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors())
+//app.use(cors())
 mongoose.connect(
   process.env.MONGODB_URL || 'mongodb+srv://prithivi:prithivi@cluster0.myqm7.mongodb.net/amazon-mongo-db?retryWrites=true&w=majority',
   {

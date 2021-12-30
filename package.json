@@ -4,7 +4,8 @@
   "description": "Ecommerce website like amazon",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
