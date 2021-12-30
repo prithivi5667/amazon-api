@@ -4,7 +4,7 @@
   "description": "Ecommerce website like amazon",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_PATH=./src node --exec babel-node ./src/index.js"
+    "start": "node ./src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
