@@ -34,7 +34,7 @@ export default function ShippingAddressScreen(props) {
     let moveOn = false;
     if (!newLat || !newLng) {
       moveOn = window.confirm(
-        'You did not set your location on map. Continue?'
+        'Please check the fields are correct !'
       );
     }
     if (moveOn) {
